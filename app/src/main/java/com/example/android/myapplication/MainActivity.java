@@ -7,6 +7,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    TextView scoreViewA;
+    TextView scoreViewB;
     int scoreTeamA = 0;
     int scoreTeamB = 0;
     int scoreTeamAbackup;
@@ -21,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        scoreViewA = (TextView) findViewById(R.id.team_a_score);
+        scoreViewB = (TextView) findViewById(R.id.team_b_score);
     }
 
     //Use onSaveInstanceState(Bundle) and onRestoreInstanceState
@@ -50,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamB = savedInstanceState.getInt (SCORE_TEAM_B);
         scoreTeamAbackup = savedInstanceState.getInt(SCORE_TEAM_A_BACKUP);
         scoreTeamBbackup = savedInstanceState.getInt (SCORE_TEAM_B_BACKUP);
-//        displayForTeamA(scoreTeamAbackup);
-//        displayForTeamB(scoreTeamBbackup);
+        // displayForTeamA(scoreTeamAbackup);
+        // displayForTeamB(scoreTeamBbackup);
         displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
 
@@ -90,8 +94,7 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Team A.
      */
     public void displayForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_a_score);
-        scoreView.setText(String.valueOf(score));
+        scoreViewA.setText(String.valueOf(score));
     }
 
     /**
@@ -127,8 +130,7 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Team B.
      */
     public void displayForTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
-        scoreView.setText(String.valueOf(score));
+        scoreViewB.setText(String.valueOf(score));
     }
     /**
      * Reset the score
