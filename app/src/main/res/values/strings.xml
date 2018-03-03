@@ -8,5 +8,5 @@
     <string name="btnPoints2">2 points</string>
     <string name="btnPoints1">1 point</string>
     <string name="btnReset">Reset</string>
-    <string name="btnUndo">Undo</string>
+    <string name="btnUndo">Undo reset</string>
 </resources>

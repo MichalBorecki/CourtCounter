@@ -42,7 +42,7 @@
                     android:layout_height="wrap_content"
                     android:text="0"
                     android:textColor="@color/txColor"
-                    android:textSize="@dimen/textSize2" />
+                    android:textSize="@dimen/text_size" />
 
                 <Button
                     style="@style/Button"
@@ -91,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:text="0"
                     android:textColor="@color/txColor"
-                    android:textSize="@dimen/textSize2" />
+                    android:textSize="@dimen/text_size" />
 
                 <Button
                     style="@style/Button"

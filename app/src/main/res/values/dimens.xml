@@ -2,8 +2,8 @@
 <resources>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="textSize1">14sp</dimen>
-    <dimen name="textSize2">56sp</dimen>
+    <dimen name="text_size">56sp</dimen>
     <dimen name="btnWeight">120dp</dimen>
-
+    <dimen name="main_padding">16dp</dimen>
+    <dimen name="main_padding_land">13dp</dimen>
 </resources>

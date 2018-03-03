@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgColor"
-    android:padding="13dp"
+    android:padding="@dimen/main_padding_land"
     tools:context=".MainActivity">
 
     <ImageView
@@ -18,7 +18,7 @@
         android:layout_weight="5">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:gravity="center_horizontal"
@@ -61,7 +61,7 @@
 
         <TextView
             android:id="@+id/team_a_score"
-            android:layout_width="45sp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="25dp"
             android:layout_weight="1"
@@ -69,11 +69,11 @@
             android:text="0"
             android:textAlignment="center"
             android:textColor="@color/txColor"
-            android:textSize="@dimen/textSize2" />
+            android:textSize="@dimen/text_size" />
 
         <TextView
             android:id="@+id/team_b_score"
-            android:layout_width="45sp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
             android:layout_weight="1"
@@ -81,11 +81,10 @@
             android:text="0"
             android:textAlignment="center"
             android:textColor="@color/txColor"
-            android:textSize="@dimen/textSize2" />
-
+            android:textSize="@dimen/text_size" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:gravity="center_horizontal"
